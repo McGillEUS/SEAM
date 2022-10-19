@@ -1,0 +1,65 @@
+.banner {
+    background: #FFF;
+}
+
+.banner::after {
+    content:'';
+    display: table;
+    clear: both;
+}
+
+.navbar-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.navbar-logo {
+    padding: 5px 0;
+    float: left;
+}
+
+header nav {
+    float: right
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header nav li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 25px;
+
+    font-size: 12pt;
+    /* font-weight: 500; */
+  
+    position: relative;
+}
+
+header a {
+    color: #378805;
+}
+
+header a:hover {
+    color: #0A0;
+}
+
+header nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #0A0;
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+}
+  
+header nav a:hover::before {
+    width: 100%;
+}
