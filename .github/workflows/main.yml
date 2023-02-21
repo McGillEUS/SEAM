@@ -24,7 +24,7 @@ jobs:
     steps:
       - name: Run a multi-line script
         run: |
-          ca /var/www/statics
+          cd /var/www/statics
           ls
           cd /var/www/statics/SEAM
           git pull
